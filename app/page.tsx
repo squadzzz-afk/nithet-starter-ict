@@ -121,7 +121,7 @@ export default async function Page() {
           maxWidth: 1100,
           margin: "40px auto",
           padding: 24,
-          fontFamily: "Arial, sans-serif",
+          fontFamily: '"Sarabun", Tahoma, sans-serif',
         }}
       >
         <h1>ระบบสารสนเทศและเครือข่าย</h1>
@@ -131,8 +131,9 @@ export default async function Page() {
           style={{
             marginTop: 30,
             padding: 24,
-            background: "#fef3c7",
-            borderRadius: 16,
+            background: "#352915",
+            border: "1px solid #8f6c2b",
+            borderRadius: 8,
           }}
         >
           <h2>ยังแสดงข้อมูลไม่ได้</h2>
@@ -203,7 +204,7 @@ export default async function Page() {
         maxWidth: 1250,
         margin: "0 auto",
         padding: "32px 24px 60px",
-        fontFamily: "Arial, sans-serif",
+        fontFamily: '"Sarabun", Tahoma, sans-serif',
       }}
     >
       <header
@@ -223,7 +224,7 @@ export default async function Page() {
         <p
           style={{
             fontSize: 18,
-            color: "#475569",
+            color: "#9bb0c1",
           }}
         >
           สำนักงานเขตพื้นที่การศึกษามัธยมศึกษาหนองคาย
@@ -260,6 +261,7 @@ export default async function Page() {
       </section>
 
       <section
+        className="analytics-grid"
         style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
@@ -299,7 +301,7 @@ export default async function Page() {
                   <div
                     style={{
                       height: 10,
-                      background: "#e2e8f0",
+                      background: "#233548",
                       borderRadius: 10,
                       overflow: "hidden",
                     }}
@@ -308,7 +310,8 @@ export default async function Page() {
                       style={{
                         height: "100%",
                         width: `${percent}%`,
-                        background: "#0f766e",
+                        background: "#50f5e3",
+                        boxShadow: "0 0 12px rgba(80,245,227,.42)",
                       }}
                     />
                   </div>
@@ -339,7 +342,7 @@ export default async function Page() {
                     justifyContent: "space-between",
                     gap: 15,
                     padding: "12px 0",
-                    borderBottom: "1px solid #e2e8f0",
+                    borderBottom: "1px solid #24364a",
                   }}
                 >
                   <span>
@@ -373,7 +376,7 @@ export default async function Page() {
             <thead>
               <tr
                 style={{
-                  background: "#0f766e",
+                  background: "#12293a",
                   color: "white",
                 }}
               >
@@ -397,7 +400,7 @@ export default async function Page() {
                   <tr
                     key={index}
                     style={{
-                      borderBottom: "1px solid #e2e8f0",
+                      borderBottom: "1px solid #24364a",
                     }}
                   >
                     <td style={tdStyle}>{String(row["ปีการศึกษา"] || "-")}</td>
@@ -440,7 +443,7 @@ function SummaryCard({
     <div style={cardStyle}>
       <div
         style={{
-          color: "#64748b",
+          color: "#92a6ba",
           fontSize: 15,
           marginBottom: 10,
         }}
@@ -452,7 +455,7 @@ function SummaryCard({
         style={{
           fontSize: 32,
           fontWeight: 700,
-          color: "#0f766e",
+          color: "#50f5e3",
         }}
       >
         {value}
@@ -467,11 +470,11 @@ function SummaryCard({
 ===================================================== */
 
 const cardStyle: React.CSSProperties = {
-  background: "#ffffff",
-  border: "1px solid #e2e8f0",
-  borderRadius: 18,
+  background: "linear-gradient(145deg, #111d2d, #0b1421)",
+  border: "1px solid #24364a",
+  borderRadius: 8,
   padding: 22,
-  boxShadow: "0 4px 18px rgba(15,23,42,0.05)",
+  boxShadow: "0 10px 32px rgba(0,0,0,.24), inset 0 1px rgba(119,225,234,.08)",
 };
 
 const thStyle: React.CSSProperties = {
