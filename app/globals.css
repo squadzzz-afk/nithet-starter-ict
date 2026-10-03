@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Sarabun:wght@400;500;600;700&display=swap");
 
 :root {
-  color-scheme: dark;
-  --ink: #ecfbff;
-  --paper: #080d17;
-  --card: #101a29;
-  --line: #24364a;
-  --muted: #92a6ba;
-  --accent: #50f5e3;
-  --pink: #ff4fd8;
-  --warn-bg: #352915;
-  --warn: #ffd479;
+  color-scheme: light;
+  --ink: #173653;
+  --paper: #edf5fc;
+  --card: #ffffff;
+  --line: #d4e2ef;
+  --muted: #5c7185;
+  --accent: #087f8c;
+  --blue: #2475b8;
+  --warn-bg: #fff8e7;
+  --warn: #72500d;
 }
 
 * { box-sizing: border-box; }
@@ -20,12 +20,12 @@ body {
   min-height: 100vh;
   background-color: var(--paper);
   background-image:
-    radial-gradient(ellipse at 12% 0%, rgba(18, 109, 124, .2), transparent 38%),
-    radial-gradient(ellipse at 92% 8%, rgba(137, 34, 115, .14), transparent 32%),
-    linear-gradient(rgba(69, 113, 139, .07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(69, 113, 139, .07) 1px, transparent 1px);
-  background-size: auto, auto, 34px 34px, 34px 34px;
-  color: #e5f1f7;
+    radial-gradient(ellipse at 8% 0%, rgba(75, 154, 213, .16), transparent 36%),
+    radial-gradient(ellipse at 92% 12%, rgba(68, 190, 190, .1), transparent 34%),
+    linear-gradient(rgba(72, 125, 168, .055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(72, 125, 168, .055) 1px, transparent 1px);
+  background-size: auto, auto, 36px 36px, 36px 36px;
+  color: #243b50;
   font-family: "Sarabun", Tahoma, sans-serif;
   font-size: 17px;
   line-height: 1.6;
@@ -33,30 +33,30 @@ body {
 
 main { position: relative; max-width: 1250px; margin: 0 auto; padding: 40px 24px 64px; }
 h1, h2 { color: var(--ink); line-height: 1.25; }
-h1 { text-shadow: 0 0 22px rgba(80, 245, 227, .28); }
+h1 { text-shadow: 0 2px 18px rgba(36, 117, 184, .12); }
 h2 { font-size: 21px; }
-header p { color: #9bb0c1 !important; }
+header p { color: #5c7185 !important; }
 
 main > section > div,
 main > section[style*="grid-template-columns"] > div {
-  background: linear-gradient(145deg, rgba(17, 29, 45, .96), rgba(11, 20, 33, .96)) !important;
+  background: linear-gradient(145deg, #ffffff, #f7fbff) !important;
   border: 1px solid var(--line) !important;
   border-radius: 8px !important;
-  box-shadow: 0 10px 32px rgba(0, 0, 0, .24), inset 0 1px rgba(119, 225, 234, .08) !important;
+  box-shadow: 0 8px 24px rgba(31, 77, 115, .08), inset 0 1px #ffffff !important;
 }
 
 main > section > div strong,
 main > section > div[style*="background"] strong { color: var(--accent); }
 main > section > div[style*="background"] > div:first-child { color: var(--muted) !important; }
-main > section > div[style*="background"] > div:nth-child(2) { color: var(--accent) !important; font-family: "Rajdhani", "Sarabun", sans-serif; }
+main > section > div[style*="background"] > div:nth-child(2) { color: #1769a5 !important; font-family: "Rajdhani", "Sarabun", sans-serif; }
 
-table { color: #dceaf2; }
-thead tr { background: #12293a !important; }
-th { color: var(--accent); text-align: left; padding: 12px; white-space: nowrap; }
-td { border-bottom: 1px solid rgba(104, 142, 165, .18); padding: 12px; vertical-align: top; }
-tbody tr:nth-child(even) { background: rgba(66, 101, 126, .08); }
-tbody tr:hover { background: rgba(80, 245, 227, .07); }
-code { background: #172638; color: var(--accent); padding: 1px 6px; border-radius: 4px; }
+table { color: #2c4358; }
+thead tr { background: #e4f0fa !important; color: #173653 !important; }
+th { color: #244f75; text-align: left; padding: 12px; white-space: nowrap; }
+td { border-bottom: 1px solid #e1eaf2; padding: 12px; vertical-align: top; }
+tbody tr:nth-child(even) { background: #f6faff; }
+tbody tr:hover { background: #eaf5fb; }
+code { background: #e6f1f9; color: #1769a5; padding: 1px 6px; border-radius: 4px; }
 
 @media (max-width: 720px) {
   main { padding: 28px 16px 48px !important; }

@@ -131,8 +131,8 @@ export default async function Page() {
           style={{
             marginTop: 30,
             padding: 24,
-            background: "#352915",
-            border: "1px solid #8f6c2b",
+            background: "#fff8e7",
+            border: "1px solid #ead7a8",
             borderRadius: 8,
           }}
         >
@@ -301,7 +301,7 @@ export default async function Page() {
                   <div
                     style={{
                       height: 10,
-                      background: "#233548",
+                      background: "#dce9f5",
                       borderRadius: 10,
                       overflow: "hidden",
                     }}
@@ -310,8 +310,8 @@ export default async function Page() {
                       style={{
                         height: "100%",
                         width: `${percent}%`,
-                        background: "#50f5e3",
-                        boxShadow: "0 0 12px rgba(80,245,227,.42)",
+                        background: "#168da4",
+                        borderRadius: 10,
                       }}
                     />
                   </div>
@@ -342,7 +342,7 @@ export default async function Page() {
                     justifyContent: "space-between",
                     gap: 15,
                     padding: "12px 0",
-                    borderBottom: "1px solid #24364a",
+                    borderBottom: "1px solid #dce6ef",
                   }}
                 >
                   <span>
@@ -376,8 +376,8 @@ export default async function Page() {
             <thead>
               <tr
                 style={{
-                  background: "#12293a",
-                  color: "white",
+                  background: "#e4f0fa",
+                  color: "#173653",
                 }}
               >
                 <th style={thStyle}>ปีการศึกษา</th>
@@ -400,7 +400,7 @@ export default async function Page() {
                   <tr
                     key={index}
                     style={{
-                      borderBottom: "1px solid #24364a",
+                      borderBottom: "1px solid #e1eaf2",
                     }}
                   >
                     <td style={tdStyle}>{String(row["ปีการศึกษา"] || "-")}</td>
@@ -455,7 +455,7 @@ function SummaryCard({
         style={{
           fontSize: 32,
           fontWeight: 700,
-          color: "#50f5e3",
+          color: "#1769a5",
         }}
       >
         {value}
@@ -470,11 +470,11 @@ function SummaryCard({
 ===================================================== */
 
 const cardStyle: React.CSSProperties = {
-  background: "linear-gradient(145deg, #111d2d, #0b1421)",
-  border: "1px solid #24364a",
+  background: "linear-gradient(145deg, #ffffff, #f7fbff)",
+  border: "1px solid #d4e2ef",
   borderRadius: 8,
   padding: 22,
-  boxShadow: "0 10px 32px rgba(0,0,0,.24), inset 0 1px rgba(119,225,234,.08)",
+  boxShadow: "0 8px 24px rgba(31,77,115,.08), inset 0 1px #ffffff",
 };
 
 const thStyle: React.CSSProperties = {
